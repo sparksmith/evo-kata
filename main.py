@@ -10,7 +10,7 @@ from modules.generator import generate_text
 from modules.trigram import *
 
 # settings 
-BASE_BOOK = "assets/frank.txt"
+BASE_BOOK = "assets/simple.txt"
 RESULT_BOOK = "result.txt"
 TEXT_LENGTH = 100
 

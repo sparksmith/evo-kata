@@ -1,10 +1,12 @@
 def readFile(fileLocation):
     print("--> Reading file: ",fileLocation)
-    file = open(fileLocation, "r", encoding="utf-8")
-    return file.read()
+    result = ""
+    with open(fileLocation, "r", encoding="utf-8") as file:
+        result = file.read()
+
+    return result
 
 def writeResult(fileLocation, text):
     print("--> Writing to file: ",fileLocation)
-    file = open(fileLocation, "w", encoding="utf-8")
-    file.write(text)
-    file.close()
+    with open(fileLocation, "w", encoding="utf-8") as file:
+        file.write(text)

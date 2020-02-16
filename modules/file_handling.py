@@ -1,5 +1,5 @@
 def readFile(fileLocation):
-    print("--> Reading file: %s",fileLocation)
+    print("--> Reading file: ",fileLocation)
     file = open(fileLocation, "r", encoding="utf-8")
     return file.read()
 

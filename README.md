@@ -29,7 +29,7 @@ Assumptions:
 
     -> Ignore punctuation
 
-    -> 1 run of the application creates 1 paragraph
+    -> 1 run of the application creates 1 block of text (paragraph)
 
 
 Concepts:

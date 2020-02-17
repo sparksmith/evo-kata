@@ -1,14 +1,16 @@
+import unittest
 import sys
 sys.path.insert(0, '../modules/')
 
 from trigram import *
 
-def test_generate_trigrams():
-	test_data= "I wish I was"
-	result_test= [("I", "wish", "I"), ("wish", "I", "was")]
+class TestTrigram(unittest.TestCase):
 
-	assert generate_trigrams(test_data) == result_test
+	def test_generate_trigrams(self):
+		test_data= "I wish I was"
+		result_test= [("I", "wish", "I"), ("wish", "I", "was")]
+
+		self.assertEqual(generate_trigrams(test_data), result_test, "Should have 2 trigrams")
 
 if __name__ == "__main__":
-    test_generate_trigrams()
-    print("Everything passed")
+    unittest.main()
